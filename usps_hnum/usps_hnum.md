@@ -44,10 +44,14 @@ order by
 6. In ArcGIS Pro connect to cscl production subaddress as a user schema
 7. Create a new version under cscl.doittworkversion. Change to the new version
 8. Join the file geodatabase to subaddress
-9. An inner join is "uncheck keep all target features" in ESRIese.
-10. Upate where usps_hnum is null and join column is not null
-11. Remove join
-12. Reconcile and post
+9. In ESRI-ese, an inner join is uncheck "keep all target features" 
+10. "Select By Attributes" where usps_hnum is null
+10. "Calculate Field" to set the selected records usps_hnum equal to the joined usps_hnum 
+11. "Calculate Field" expression type may not be SQL. Does not support SQL! 
+12. Remove join
+13. Reconcile and post
+14. Delete the version
+14. Close and restart ESRI desktop software before continuing
 
 
 
