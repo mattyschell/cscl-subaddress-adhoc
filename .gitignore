@@ -1,3 +1,5 @@
 /scratch
 *.gdb/*
 *.txt
+*.aprx
+*load_subaddress_prune.sql
