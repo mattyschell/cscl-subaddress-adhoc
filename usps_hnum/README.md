@@ -39,12 +39,16 @@ sqlplus cscl/iluvljackdangermond247@ditxxxxx @load_subaddress_prune.sql
 Give your user schema access to subaddress_prune (if necessary)
 
 ```
-grant select on subaddress_prune to "MSCHELL";
+grant select on subaddress_prune to "<EDITOR>";
 ```
 
 3. Update cscl.subaddress_evw (versioned view)
 
 We will create a version and edit the version.  Though this seems like overkill for an attribute update it is a path that will be respected by  ESRI functionality like replication.
+
+```
+sqlplus <editor>/iluvscottmorehouse247@ditxxxxx @update_target.sql
+```
 
 4. Review the results and manually reconcile and post from "subaddressversion"
 
